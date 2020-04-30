@@ -26,8 +26,22 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+
+     Color primaryColor = Color.fromRGBO(255, 82, 48, 1);
     return Scaffold(
-      
+     backgroundColor: Color.fromRGBO(244, 244, 244, 1),
+     body: SingleChildScrollView(
+       child: Column(
+         crossAxisAlignment: CrossAxisAlignment.start,
+         children: <Widget>[
+           Container(
+             width:double.infinity,
+             color: primaryColor,
+             //border : Border.all(color: primaryColor)
+           ), 
+
+         ],)
+     ),
     );
   }
 }
